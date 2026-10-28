@@ -9,13 +9,24 @@
     <style>
         .slide { display: none; }
         .slide.active { display: flex; }
-        body { background-color: #0f172a; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            overflow: hidden;
+        }
     </style>
 </head>
-<body class="h-screen w-screen flex flex-col justify-between overflow-hidden m-0 p-0">
+<body>
 
     <!-- SLIDES CONTAINER -->
-    <div id="slides-wrapper" class="flex-grow relative flex items-center justify-center p-8 overflow-y-auto w-full">
+    <div id="slides-wrapper" class="relative flex items-center justify-center p-8 overflow-y-auto w-full h-full">
 
         <!-- SLIDE 1: Title Slide -->
         <div class="slide active flex-col justify-center items-center text-center max-w-5xl mx-auto w-full">
@@ -186,4 +197,239 @@
         <!-- SLIDE 7: Why Applicants Drop Off -->
         <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
             <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">Why Applicants Drop Off</h2>
-            <div class="grid grid-
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">The 6-Second Screen & ATS Trap</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Recruiters spend 6 to 8 seconds scanning a resume. Cluttered multi-column templates, tables, and fancy graphics break standard <strong>Applicant Tracking Systems (ATS)</strong>, making your profile unreadable to automated filter software.
+                    </p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Technical Deficiencies</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Coding screens fail due to weak foundations in core <strong>Structured Query Language (SQL)</strong> (e.g., Aggregations, Window Functions), advanced Excel formulas, or basic Business Intelligence (BI) data modeling.
+                    </p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Missing Business Context</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Candidates fail final interviews because they talk entirely about coding syntax instead of explaining how their analytics project impacts business revenue, cost reduction, or operational efficiency.
+                    </p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Ignoring the Referral Channel</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Relying 100% on cold job board submissions puts you in a pool of 285+. Networking and employee referrals bypass the ATS queue entirely and land resumes directly on hiring managers' desks.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 8: The AI Era for Data Analysts -->
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">The AI Era: Impact & Opportunity</h2>
+            <p class="text-lg text-slate-300 mb-6">Generative AI (GenAI) and Large Language Models (LLMs) like ChatGPT and Claude are transforming the data landscape—not by replacing analysts, but by shifting what employers demand:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-3 shadow-md">
+                    <h3 class="text-xl font-semibold text-sky-400">What AI Accelerates</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                        <li>Writing standard SQL queries and Python pandas scripts.</li>
+                        <li>Drafting initial data visualization layouts and dashboard boilerplate.</li>
+                        <li>Rapid documentation, summarization, and data dictionary generation.</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-3 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">The "Human Bottleneck" (Un-Replaceable)</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                        <li><strong class="text-white">Business Domain Context:</strong> Knowing <em>why</em> the data matters and translating ambiguity into precise analytical questions.</li>
+                        <li><strong class="text-white">Data Governance & Security:</strong> Ensuring compliance with HIPAA, HL7 standards, and internal corporate data privacy policies.</li>
+                        <li><strong class="text-white">Logic Validation:</strong> AI hallucinates syntax and joins. Analysts must audit, validate, and verify every output.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 9: Tennessee & Nashville Compensation -->
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">Tennessee & Nashville Salary Landscape (2026)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center shadow-md">
+                    <span class="text-xs uppercase tracking-wider text-slate-400 font-bold">State of Tennessee Median</span>
+                    <div class="text-2xl lg:text-3xl font-black text-white my-3">$62,160 - $65,877</div>
+                    <p class="text-xs text-slate-400">Entry-level base pay; bottom 25th percentile baselines around $39,900 to $54,000.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-sky-500/50 text-center bg-sky-950/20 shadow-md">
+                    <span class="text-xs uppercase tracking-wider text-sky-400 font-bold">Nashville Metro Hub Premium</span>
+                    <div class="text-2xl lg:text-3xl font-black text-sky-400 my-3">$66,152 - $72,500</div>
+                    <p class="text-xs text-slate-300">Reflects a 13% premium over national baselines. Mid-market density sits between $54,700 and $68,000.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center shadow-md">
+                    <span class="text-xs uppercase tracking-wider text-slate-400 font-bold">Major Local Employers</span>
+                    <div class="text-base font-bold text-white my-4">HCA, VUMC, Asurion, Amazon</div>
+                    <p class="text-xs text-slate-400">Dominant corporate health and tech conglomerates driving regional hiring volume.</p>
+                </div>
+            </div>
+            <p class="text-sm text-slate-400 text-center">💡 <strong class="text-slate-200">Tip:</strong> Total compensation packages frequently include 401(k) matching, health benefits, and performance bonuses.</p>
+        </div>
+
+        <!-- SLIDE 10: The Experienced Pivot Advantage -->
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">The "Experienced Pivot" Advantage</h2>
+            <p class="text-lg text-slate-300 mb-6">For career changers coming from military, law enforcement, or public service, your prior work history is a massive unfair advantage:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-3 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Domain > Syntax</h3>
+                    <p class="text-sm text-slate-300">Coding syntax can be researched and generated instantly with AI tools, but deep industry operations, compliance, and problem intuition take years to master.</p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-3 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Translate Your Past</h3>
+                    <p class="text-sm text-slate-300">Transform operational duties into data stories. Rephrase investigative or security tracking into quantifiable metric statements (e.g., analyzing patterns to reduce operational lag).</p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-3 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Build Niche Portfolios</h3>
+                    <p class="text-sm text-slate-300">Construct capstone projects and portfolio dashboards utilizing data exclusively from your prior field to show instant corporate context to hiring managers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 11: Targeting Adjacent Job Titles -->
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">Targeting Adjacent Job Titles</h2>
+            <p class="text-lg text-slate-300 mb-4">Sidestep the heavily congested "Junior Data Analyst" title queue by applying to domain-specific analytical paths where your background shines:</p>
+            <div class="overflow-x-auto bg-slate-800/80 rounded-xl border border-slate-700 shadow-lg">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-sky-950/40 text-sky-400 border-b border-slate-700">
+                            <th class="p-4 font-semibold">Prior Industry Background</th>
+                            <th class="p-4 font-semibold text-rose-400">Congested Path (Avoid)</th>
+                            <th class="p-4 font-semibold text-emerald-400">Strategic Transition Target (Apply)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700 text-slate-300">
+                        <tr>
+                            <td class="p-4 font-medium text-white">Military / Law Enforcement / Security</td>
+                            <td class="p-4 text-rose-300">Junior Data Analyst</td>
+                            <td class="p-4 text-emerald-300 font-semibold">Operations Analyst / Risk & Compliance Analyst</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-white">Healthcare / Clinical / Nursing</td>
+                            <td class="p-4 text-rose-300">Entry Data Analyst</td>
+                            <td class="p-4 text-emerald-300 font-semibold">Healthcare Revenue Analyst / Clinical Systems Analyst</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-white">Retail / Logistics / Supply Chain</td>
+                            <td class="p-4 text-rose-300">Data Associate</td>
+                            <td class="p-4 text-emerald-300 font-semibold">Supply Chain Operations Specialist / Inventory Analyst</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- SLIDE 12: Actionable Blueprint to Win -->
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">Actionable Blueprint to Win</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">1. Ditch the Cold Application</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Shift energy away from mass job board portals toward employee referrals via local meetups (Nashville Data Nerds, PyTennessee, Music City Code) and LinkedIn networking.</p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">2. Optimize for Clean ATS Scans</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Maintain a plain, single-column text resume layout highlighting <strong>SQL, Excel, and Power BI/Tableau</strong> prominently at the top.</p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">3. Tell Business Stories (STAR)</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Practice project delivery using the <strong>STAR Method</strong> (Situation, Task, Action, Result) with clear financial or efficiency metrics highlighted.</p>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-2 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">4. Leverage AI as a Co-Pilot</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Master prompt engineering for data validation, script debugging, and interview prep to accelerate your workflow.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 13: Q&A / Conclusion -->
+        <div class="slide flex-col justify-center items-center text-center max-w-5xl mx-auto w-full">
+            <span class="px-4 py-1.5 rounded-full bg-sky-500/10 text-sky-400 font-semibold text-sm mb-4 border border-sky-500/20">Thank You!</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">Question Time & Open Discussion</h1>
+            <p class="text-xl text-slate-300 mb-8">Let's connect and land your first analytics role.</p>
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 max-w-lg w-full space-y-2 text-left shadow-xl">
+                <p class="text-white font-medium"><strong>Presenter:</strong> Robert Ruiz</p>
+                <p class="text-slate-300 text-sm"><strong>Role:</strong> Consulting Analyst at HCA Healthcare</p>
+                <p class="text-slate-300 text-sm"><strong>Email:</strong> robertruiz531@gmail.com</p>
+                <p class="text-slate-300 text-sm truncate"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/robert-ruiz2882/" target="_blank" class="text-sky-400 hover:underline">linkedin.com/in/robert-ruiz2882/</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTROLS FOOTER -->
+    <div class="controls-container bg-[#0b0f19] px-8 py-4 flex justify-between items-center border-t border-slate-800 z-50 w-full">
+        <div class="flex gap-4">
+            <button id="prev-btn" onclick="prevSlide()" class="px-5 py-2.5 rounded-lg bg-slate-800 text-white font-medium hover:bg-sky-500 hover:text-slate-950 transition disabled:opacity-30 disabled:cursor-not-allowed">Previous</button>
+            <button id="next-btn" onclick="nextSlide()" class="px-5 py-2.5 rounded-lg bg-slate-800 text-white font-medium hover:bg-sky-500 hover:text-slate-950 transition disabled:opacity-30 disabled:cursor-not-allowed">Next</button>
+        </div>
+        <div class="flex-grow mx-8 flex flex-col gap-2 max-w-md">
+            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div id="progress-bar" class="bg-sky-400 h-full transition-all duration-300" style="width: 7.69%;"></div>
+            </div>
+            <div id="slide-counter" class="text-xs text-slate-400 text-center font-medium">Slide 1 of 13</div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT NAVIGATION -->
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        let currentSlide = 1;
+
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const progressBar = document.getElementById('progress-bar');
+        const slideCounter = document.getElementById('slide-counter');
+
+        function updateSlides() {
+            slides.forEach((slide, index) => {
+                if (index === currentSlide - 1) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            prevBtn.disabled = (currentSlide === 1);
+            nextBtn.disabled = (currentSlide === totalSlides);
+
+            const progressPercent = (currentSlide / totalSlides) * 100;
+            progressBar.style.width = progressPercent + '%';
+            slideCounter.textContent = 'Slide ' + currentSlide + ' of ' + totalSlides;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlides();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlides();
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight' || event.key === 'Spacebar' || event.key === ' ') {
+                event.preventDefault();
+                nextSlide();
+            } else if (event.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        updateSlides();
+    </script>
+</body>
+</html>
