@@ -7,8 +7,8 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .presentation-slide { display: none; }
-        .presentation-slide.active-slide { display: flex; }
+        .slide { display: none; }
+        .slide.active { display: flex; }
         body { background-color: #0f172a; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     </style>
 </head>
@@ -18,7 +18,7 @@
     <div id="slides-wrapper" class="flex-grow relative flex items-center justify-center p-8 overflow-y-auto w-full">
 
         <!-- SLIDE 1: Title Slide -->
-        <div class="presentation-slide active-slide flex-col justify-center items-center text-center max-w-5xl mx-auto w-full">
+        <div class="slide active flex-col justify-center items-center text-center max-w-5xl mx-auto w-full">
             <span class="px-4 py-1.5 rounded-full bg-sky-500/10 text-sky-400 font-semibold text-sm mb-4 border border-sky-500/20">Nashville Software School (NSS) • Cohort 8</span>
             <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">
                 Navigating the Entry-Level <span class="text-sky-400">Data Analyst</span> Job Market
@@ -31,7 +31,7 @@
         </div>
 
         <!-- SLIDE 2: Agenda & Welcome -->
-        <div class="presentation-slide flex-col justify-center max-w-5xl mx-auto w-full">
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
             <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">Agenda & Ground Rules</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="space-y-4 text-lg text-slate-300">
@@ -61,7 +61,7 @@
         </div>
 
         <!-- SLIDE 3: My Professional Background -->
-        <div class="presentation-slide flex-col justify-center max-w-5xl mx-auto w-full">
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
             <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">My Background & Story</h2>
             <p class="text-lg text-slate-300 mb-6">Transitioning across high-stakes industries built the resilience required for enterprise data engineering and analytics:</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -89,7 +89,7 @@
         </div>
 
         <!-- SLIDE 4: My Personal Job Search Numbers -->
-        <div class="presentation-slide flex-col justify-center max-w-5xl mx-auto w-full">
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
             <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">My Job Search Metrics (NSS DA8)</h2>
             <p class="text-lg text-slate-300 mb-6">Job hunting is a numbers game requiring persistence. Here is what my personal transition pipeline looked like:</p>
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
@@ -110,4 +110,26 @@
                     <div class="text-sm text-slate-300 mt-2 font-medium">Technical Rounds</div>
                 </div>
                 <div class="bg-slate-800 p-5 rounded-xl border border-sky-500/50 col-span-2 md:col-span-1 bg-sky-950/30 shadow-md">
-                    <div class="text-3xl md:text-4xl font-black text-amber-400">1
+                    <div class="text-3xl md:text-4xl font-black text-amber-400">1</div>
+                    <div class="text-sm text-slate-200 mt-2 font-medium">Winning Offer (HCA)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: Tech Career Shifting & Market Demands -->
+        <div class="slide flex-col justify-center max-w-5xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">Tech Career Transition & Market Demand</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-4 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Shifting to Tech Metrics</h3>
+                    <ul class="space-y-3 text-slate-300 text-base">
+                        <li><strong class="text-white">Income Growth:</strong> Career changers entering tech analytics experience an average salary increase of <span class="text-sky-400 font-bold">+30% to +45%</span> over prior non-tech roles.</li>
+                        <li><strong class="text-white">NSS Proven Track Record:</strong> NSS boasts an overall placement rate of <span class="text-sky-400 font-bold">87%</span> (87.5% Full-Time, 78.4% Part-Time), with over 2,807+ graduates and 600+ Data Analysts placed.</li>
+                        <li><strong class="text-white">Flexibility & Remote Work:</strong> Over 68% of data roles offer hybrid or fully remote schedules.</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/70 p-6 rounded-xl border border-slate-700 space-y-4 shadow-md">
+                    <h3 class="text-xl font-semibold text-amber-400">Job Market Demand (BLS 2026)</h3>
+                    <ul class="space-y-3 text-slate-300 text-base">
+                        <li><strong class="text-white">Rapid Growth:</strong> According to the U.S. Bureau of Labor Statistics (BLS), Data Analyst and Data Science fields are projected to grow <span class="text-sky-400 font-bold">+23% through 2032</span>.</li>
+                        <li><strong class="text-white">Volume:</strong> Over <span class="text-sky-400 font
